@@ -1,0 +1,1 @@
+{"fireballs": ["./images/fireball0.bmp", "./images/fireball1.bmp", "./images/fireball2.bmp", "./images/fireball3.bmp", "./images/fireball4.bmp", "./images/fireball5.bmp", "./images/fireball6.bmp", "./images/fireball7.bmp", "./images/fireball8.bmp", "./images/fireball9.bmp", "./images/fireball10.bmp", "./images/fireball11.bmp", "./images/fireball12.bmp"]}
