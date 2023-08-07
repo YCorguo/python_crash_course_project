@@ -2,6 +2,7 @@ from settings import Settings
 from dragon import Dragon
 import game_functions as gf
 from pygame.sprite import Group
+from enemy import Enemy
 
 import sys, pygame
 
@@ -16,6 +17,9 @@ def run_game():
     # 创建一个用于存储火球的编组
     fireballs = Group()
 
+    # 创建一个敌人
+    enemy = Enemy(ai_settings, screen)
+
     # 设置背景色
     bg_color = (230, 230, 230)
 
@@ -27,6 +31,6 @@ def run_game():
         gf.check_events(ai_settings, screen, dragon, fireballs)
         dragon.update()
         gf.update_fireballs(fireballs)
-        gf.update_screen(ai_settings, screen, dragon, fireballs)
+        gf.update_screen(ai_settings, screen, dragon, enemy, fireballs)
 
 run_game()

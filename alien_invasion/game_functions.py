@@ -31,11 +31,12 @@ def check_events(ai_settings, screen, dragon, fireballs):
         elif event.type == pygame.KEYUP:
             check_keyup_events(event, ai_settings, dragon, fireballs)
 
-def update_screen(ai_settings, screen, dragon, fireballs):
+def update_screen(ai_settings, screen, dragon, enemy, fireballs):
     """更新屏幕上的图像，并切换到新屏幕"""
     # 每次循环时都重绘屏幕
     screen.fill(ai_settings.bg_color)
     dragon.blitme()
+    enemy.blitme()
     for fireball in fireballs:
         fireball.blitme()
 
